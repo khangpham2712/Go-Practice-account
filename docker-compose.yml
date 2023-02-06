@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  db:
+    image: mysql:8.0.32
+    environment:
+      MYSQL_ROOT_PASSWORD: headingto
+      MYSQL_USER: hello
+      MYSQL_PASSWORD: world
+    ports:
+      - "1111:3306"
+
